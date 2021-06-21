@@ -157,7 +157,7 @@ a {
 }
 
 .project:hover .project-hover {
-	display: inline-block;
+	
 	background-color:rgba(0,35,109,0.9);
 	float: right;
 	width: 450px;
@@ -465,7 +465,8 @@ a:hover.cta-button {
   font-size: 13px;
   font-weight: bold;
   color: #001E6D;
-	margin-top: 20px;
+
+	margin-top: 40px;
 	flex-grow: 2;
 }
 
@@ -724,7 +725,7 @@ a.active-green {
 	}
 
 	.game-title {
-		padding-bottom: 30px;
+		padding-bottom: 40px;
 	}
 
 
