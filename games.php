@@ -105,6 +105,7 @@ Created for NaNoRenO2019.
 				A city of snow, hearts forged in steel. Doctor Imani Ward carries the scars of a war long ended, and our own burdens as we move forward. Created for NaNoRenO2020.				</div>
 			</a>
 		</div>
+		</div>
 	</div>
 	<?php include 'footer.php'; ?>
 </div>

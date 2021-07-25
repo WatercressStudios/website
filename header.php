@@ -8,7 +8,8 @@
 		<ul>
 			<li><a href="index.php">Home</a></li>
 			<li><a href="games.php">Our Games</a></li>
-			<li><a href="about.php">About Us</a></li>
+			<li><a href="about2.php">About Us</a></li>
+			<li><a href="avitus.php">Avitus</a></li>
 		</ul>
 	</div> 
 	<div class="socialmedia-navigation">
