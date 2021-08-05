@@ -7,6 +7,8 @@
 
 
 	<h1>Hey everyone, we are currently making remaking this whole website for the time being. </h1>
+    <p>For now here is a picture of Budapast to keep you entertained</p>
+    <img height="500" width="500" alt="Budapest" loading="lazy" src="budascene6.webp">
 	<noscript>Your browser does not support JavaScript! Why?!</noscript>
 	<?php include 'footer.php'; ?>
 </div>
