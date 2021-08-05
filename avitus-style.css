@@ -1,7 +1,65 @@
 .avitus-header {
-    text-align: center;
-    margin: 0.5em;
+    text-align: left;
+
+  
 }
 .avitus-slideshow {
-    text-align: center;
+    align-content: center;
 }
+.project-description {
+    margin: 100px 100px 100px 100px;
+    line-height: 2em;
+}
+.character-cast {
+    display: grid;
+    gap: 30px;
+}
+.character-card {
+    color: black;
+    background-color: white;
+    display: grid;
+    
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 300px 1fr auto;
+    
+}
+.character-img {
+grid-column: 1/2;
+justify-self: center;
+grid-row: 1/2;
+}
+.character-header {
+grid-column: 1/4;
+grid-row: 2/2;
+
+
+}
+.character-description {
+grid-column: 2/3;
+grid-row: 1/2;
+line-height: 1.5em;
+padding: 1em;
+}
+@media only screen and (max-width: 600px) {
+    .main-team {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 300px 1fr auto;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .main-team {
+        grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 300px 1fr auto;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .main-team {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 300px 1fr auto;
+    }
+  } 
+  

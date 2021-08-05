@@ -5,6 +5,7 @@
     <?php include 'head.php'; ?>
     <?php include 'header.php'; ?>
     <link rel="stylesheet" href="membercard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <div class="container">
         <div class="content">
             <p>Watercress was founded in August of 2014 on the Katawa Shoujo subreddit. Inspired by the emotional
@@ -18,11 +19,73 @@
             <p>Want to contact us? <a href="">contact@watercress.com</a></p>
         </div>
 
-        <div class="wc-members">
-
-            <div class="main-team">
+        <div class="main-team">
+            <div class="main-member-card">
+                <img class="member-pfp" src="img/4.png">
+                <h1 class="member-name">Wolf</h1>
+                <h1 class="member-role">Studio Director/CEO</h1>
+                <ul class="social-media">
+                    <li><a href="https://twitter.com/TeamWatercress" class="fa fa-twitter"></a></li>
+                    <li><a href="" class="fab fa-discord"></a></li>
+                    <li><a href="" class="fab fa-twitch"></a></li>
+                </ul>
+                <p class="member-description">Works: Our Home., Palinurus, Cautionary Tale, Fare Thee Well</p>
+                <p class="member-description">Likes Toast and flowers and a lemonade in the evening.</p>
             </div>
-            <div class="full-team">
+
+            <div class="main-member-card">
+                <img class="member-pfp" src="img/4.png">
+                <h1 class="member-name">TheAlchemyst</h1>
+                <h1 class="member-role">CFO</h1>
+                <ul class="social-media">
+                    <li><a href="https://twitter.com/TeamWatercress" class="fa fa-twitter"></a></li>
+                    <li><a href="" class="fab fa-discord"></a></li>
+                    <li><a href="" class="fab fa-twitch"></a></li>
+                </ul>
+                <p class="member-description">Works: Our Home., Palinurus, Cautionary Tale, Fare Thee Well</p>
+                <p class="member-description">Likes Toast and flowers and a lemonade in the evening.</p>
+            </div>
+            <div class="container">
+                <div class="full-team">
+
+                    <div class="full-member-card">
+                        <img class="member-pfp" src="img/4.png">
+                        <h1 class="member-name">Lee</h1>
+                        <h1 class="member-role">Writer</h1>
+                        <ul class="social-media">
+                            <li><a href="https://twitter.com/TeamWatercress" class="fa fa-twitter"></a></li>
+                            <li><a href="" class="fab fa-discord"></a></li>
+                            <li><a href="" class="fab fa-twitch"></a></li>
+                        </ul>
+                        <p class="member-description">Works: Our Home., Palinurus, Cautionary Tale, Fare Thee Well</p>
+                        <p class="member-description">Likes Toast and flowers and a lemonade in the evening.</p>
+                    </div>
+                    <div class="full-member-card">
+                        <img class="member-pfp" src="img/4.png">
+                        <h1 class="member-name">Lee</h1>
+                        <h1 class="member-role">Writer</h1>
+                        <ul class="social-media">
+                            <li><a href="https://twitter.com/TeamWatercress" class="fa fa-twitter"></a></li>
+                            <li><a href="" class="fab fa-discord"></a></li>
+                            <li><a href="" class="fab fa-twitch"></a></li>
+                        </ul>
+                        <p class="member-description">Works: Our Home., Palinurus, Cautionary Tale, Fare Thee Well</p>
+                        <p class="member-description">Likes Toast and flowers and a lemonade in the evening.</p>
+                    </div>
+
+                    <div class="full-member-card">
+                        <img class="member-pfp" src="img/4.png">
+                        <h1 class="member-name">Lee</h1>
+                        <h1 class="member-role">Writer</h1>
+                        <ul class="social-media">
+                            <li><a href="https://twitter.com/TeamWatercress" class="fa fa-twitter"></a></li>
+                            <li><a href="" class="fab fa-discord"></a></li>
+                            <li><a href="" class="fab fa-twitch"></a></li>
+                        </ul>
+                        <p class="member-description">Works: Our Home., Palinurus, Cautionary Tale, Fare Thee Well</p>
+                        <p class="member-description">Likes Toast and flowers and a lemonade in the evening.</p>
+                    </div>
+                </div>
             </div>
         </div>
         <?php include 'footer.php'; ?>
