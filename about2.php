@@ -18,6 +18,14 @@
 
             <p>Want to contact us? <a href="">contact@watercress.com</a></p>
         </div>
+        <h1>Timeline</h1>
+        <ul>
+            <li>2014 - Watercress is formed from the Katawa Shoujo Subreddit on August 6th</li>
+            <li>2014 - The flagship game "Avitus" (working title) begins conceptual production</li>
+            <li>2014 - Lull is released</li>
+            <li>2015 - Palinurus is released</li>
+            <li> </li>
+        </ul>
 
         <div class="main-team">
             <div class="main-member-card">
@@ -50,7 +58,7 @@
 
                     <div class="full-member-card">
                         <img class="member-pfp" src="img/4.png">
-                        <h1 class="member-name">Lee</h1>
+                        <h1 class="member-name">Sagittaeri</h1>
                         <h1 class="member-role">Writer</h1>
                         <ul class="social-media">
                             <li><a href="https://twitter.com/TeamWatercress" class="fa fa-twitter"></a></li>
@@ -58,7 +66,7 @@
                             <li><a href="" class="fab fa-twitch"></a></li>
                         </ul>
                         <p class="member-description">Works: Our Home., Palinurus, Cautionary Tale, Fare Thee Well</p>
-                        <p class="member-description">Likes Toast and flowers and a lemonade in the evening.</p>
+                        <p class="member-description">Sagittaeri is a Melbourne-based professional game developer with a passion for emotionally impactful narrative games. Always seeking to craft new experiences, Sagi joined Watercress for the development of "Our Home." and has been making Visual Novels with them ever since, serving in the capacity of writer, designer and programmer.</p>
                     </div>
                     <div class="full-member-card">
                         <img class="member-pfp" src="img/4.png">
