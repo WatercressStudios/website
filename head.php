@@ -26,8 +26,9 @@
 	<link rel="stylesheet" type="text/css" href="min.styles.css" />
   <!-- Note to self or future developer, I did not use babel or webpack to minify the production files, 
 I kinda need to learn how to at some point. -->
-  <meta name="viewport" content="width=device-width"/>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=500, initial-scale=1">
   <!-- Keep an eye out on this line of code, in case scripts act funny. -->
   <!-- <meta http-equiv="Content-Security-Policy" content="
 		default-src 'self';

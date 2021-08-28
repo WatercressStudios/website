@@ -5,11 +5,12 @@
     <?php include 'head.php'; ?>
     <?php include 'header.php'; ?>
     <link rel="stylesheet" href="avitus-style.css">
+    
 
    
         <div class="project-description">
         <div class="avitus-slideshow">
-            <img src="https://via.placeholder.com/900x250">
+          
         </div>
             <h1 class="avitus-header">Premise</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod malesuada bibendum. Duis non
@@ -45,11 +46,12 @@
             <h1 class="avitus-header">Trailer</h1>
         </div>
 </div>
+<div class="project-description">
 
-    
+<h1 class="avitus-header">Cast</h1>
+</div>
         <div class="container">
             <div class="character-cast">
-            <h1 class="avitus-header">Cast</h1>
                 <div class="character-card">
                     <img class="character-img" src="https://via.placeholder.com/250">
                     <h1 class="character-header">Character</h1>
