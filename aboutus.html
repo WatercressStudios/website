@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>About Us</title>
+  
+    <!-- Load jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  
+    <!-- MDB icon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" as="style" onload="this.rel='stylesheet'">
+  
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    
+    <!-- uncomment when told to, I don't like bebas nue right here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+  
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+  
+    <!-- logos -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/logos/apple-icon-57x57.webp">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/logos/apple-icon-60x60.webp">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/logos/apple-icon-72x72.webp">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/logos/apple-icon-76x76.webp">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/logos/apple-icon-114x114.webp">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/logos/apple-icon-120x120.webp">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/logos/apple-icon-144x144.webp">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/logos/apple-icon-152x152.webp">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/logos/apple-icon-180x180.webp">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/logos/android-icon-192x192.webp">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logos/favicon-32x32.webp">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/logos/favicon-96x96.webp">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/logos/favicon-16x16.webp">
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Open graph stuff -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Watercress Studios"/>
+    <meta property="og:description" content="We are the largest freeware Visual Novel studio in the North America!"/>
+    <meta property="og:url" content="https://watercressstudios.com/"/>
+    <meta property="og:image" content="https://watercressstudios.com/img/Logo.webp" />
+    <meta property="og:site_name" content="Watercress" />
+    <!-- Twitter card stuff -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Watercress Studios"/>
+    <meta name="twitter:url" content="https://watercressstudios.com"/>
+    <meta name="twitter:description" content="The Largest Visual Novel Studio in USA"/>
+    <meta name="twitter:site" content="@TeamWatercress"/>
+    <meta name="twitter:image" content="https://watercressstudios.com/img/Logo.webp"/>
+    <meta name="twitter:creator" content="@Happinessplus__"/>
+  
+    <!-- Custom -->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-light">
+      <div class="container-fluid">
+        <!-- switch to data lazy once I get lazy loading -->
+        <img src="img/Logo.webp" alt="Watercress Studios" height="50px" width="50px">
+        <h2>Watercress</h2>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" style="color: #3777e9 ;"
+          data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+    <!-- Remember this blue, style="background: #475cfa;" -->
+    <div class="collapse" id="navbarToggleExternalContent"> 
+      <div class="shadow-3 p-4">
+        <button class="btn btn-link btn-block m-0 border-bottom"><a href="index.html">Home</a></button>
+        <button class="btn btn-link btn-block m-0 border-bottom"><a href="aboutus.html">About Us</button>
+        <button class="btn btn-link btn-block m-0 border-bottom"><a href="avitus.html">Avitus</a></button>
+        <button class="btn btn-link btn-block m-0 border-bottom"> <a href="team.html">Meet The Team</a></button>
+      </div>
+    </div>
+  </header>
+
+<video loop autoplay>
+  <source src="nightbackground.webm" type="video/webm">
+</video>
+<section style="padding: 3%;">
+  <h1 class="text-center" style="color: white;">About Us</h1>
+  <hr>
+  <p style="color: white;">
+    Watercress, founded in August of 2014 on the Katawa Shoujo subreddit, was initially inspired by the emotional narrative of Katawa Shoujo. Shortly after conception, we set out to create our own visual novel, Avitus.<br> 
+		Seven years and more than a dozen releases later, we're still creating VNs that we love, with a heavy focus on character-driven narratives. Our games are often in the genres of 'nakige' or 'utsuge', and many of them don't have the happiest of endings.<br>
+		With a team of over fifty hardened and experienced individuals, we're finally setting our sights once again on our end goal: Avitus.
+  </p>
+</section>
+
+<section>
+  <h2 class="text-center">Timeline</h2>
+  <div class="container py-5">
+    <div class="main-timeline-2">
+      <div class="timeline-2 left-2">
+        <div class="card">
+          <img src="img/timeline/oldavitus.webp" class="card-img-top" alt="Old avitus">
+          <div class="card-body p-4">
+            <h3 class="fw-bold text-center">Hopeful Beginnings</h3>
+            <hr>
+            <h5 class="fw-bold mb-5">The First Age of Watercress - Success and Struggle</h5>
+            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i>2014-2016</p>
+            <h5>Notable Moments:</h5>
+            <ul>
+              <li>2014 - Watercress is formed from the Katawa Shoujo Subreddit on August 6th</li>
+              <li>2014 - The flagship game "Avitus" (working title) begins conceptual production</li>
+              <li>2014 - Lull is released</li>
+              <li>2015 - Palinurus is released</li>
+					    <li>2015 - Seeds of Sylvia is released</li>
+              <li>2016 - Fare Thee Well is released</li>
+            </ul>
+            <p class="mb-0">Characterized by hope and naivete, this period is often coined internally as the first "Golden Age" of Watercress' public releases. Some of our greatest projects were released in this time, with Palinurus and Fare Thee well being two of our most popular works to date. However, it was also a difficult time, as we were young and immature - the mean studio member age was around 17 years old.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-2 right-2">
+        <div class="card">
+          <img src="img/timeline/oldbuda.webp" class="card-img-top" alt="Budapest">
+          <div class="card-body p-4">
+            <h3 class="fw-bold text-center">Rebuilding a Studio</h3>
+				    <hr>
+            <h5 class="fw-bold mb-4">The Second Age of Watercress - Failure and Reconstruction</h5>
+            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i>2016-2017</p>
+            <h5>Notable Moments:</h5>
+            <ul>
+              <li>2016 - Avitus is put on hold</li>
+              <li>2016 - Palinurus is released on Steam</li>
+              <li>2017 - Our Home. is released</li>
+              <li>2017 - Watercress incorporates into an LLC</li>
+					    <li>2017 - One Step Forward begins production</li>
+					    <li>2017 - Ah! My Girlfriend is a Demon Summoned from the Depths of Hell! is released</li>
+            </ul>
+            <p class="mb-0">In the early months of 2016 - in the middle of Fare Thee Well's development - Watercress almost fell apart. It wouldn't be until Autumn the same year that Watercress would reorganize, restructure, formalize processes, and set its sights on non-Avitus projects. Our Home., the first project to be released since, ultimately became our largest written project to date. Later that year, One Step Forward - Watercress' first non-gamejam game since Avitus proper - begins production.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="timeline-2 left-2">
+        <div class="card">
+          <img src="img/timeline/oldtv.webp" class="card-img-top" alt="Responsive image">
+          <div class="card-body p-4">
+            <h3 class="fw-bold text-center">Working Together</h3>
+				    <hr>
+            <h5 class="fw-bold mb-4">The Third Age of Watercress - Collaboration and Education</h5>
+            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i>2018-2019</p>
+            <h5>Notable Moments:</h5>
+            <ul>
+              <li>2018 - Cautionary Tale is released</li>
+              <li>2018 - Fare Thee Well is released on Steam</li>
+              <li>2018 - Ah!! My Roommate is a Succubus Hellbent on World Conquest!! is released</li>
+              <li>2019 - this was for you. is released on itch.io and Steam</li>
+					    <li>2019 - Somnova Studios' Arcadia is published by Watercress on Steam</li>
+            </ul>
+            <p class="mb-0">2018, four years after the inception of the studio and Avitus' initial conception, the fate of our flagship project was still uncertain. Probing efforts into other Avitus-related projects had started and been shelved, and production was in full swing for One Step Forward. Our focus on gamejams changed from small, polished projects to large, collaborative endeavors - earning much-needed experience with our massive collaborative effort, Cautionary Tale, shipping. While lessons were learned, this paired with Our Home. is sometimes considered internally as Watercress' second "Golden Age", with particular respect to smoother internal affairs in comparison to the first.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-2 right-2">
+        <div class="card">
+          <img src="img/timeline/oldgravstones.webp" class="card-img-top" alt="Responsive image">
+          <div class="card-body p-4">
+            <h3 class="fw-bold text-center">One Step Back, One Step Forward</h3>
+				    <hr>
+            <h5 class="fw-bold mb-4">The Fourth Age of Watercress - Flowers, Stars, and the Interim Period</h5>
+            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i>2019-2020</p>
+            <h5>Notable Moments:</h5>
+            <ul>
+              <li>2019 - One Step Forward is shelved permanently</li>
+              <li>2019 - A Field of Flowers and Stars Demo is released</li>
+              <li>2020 - When the War was Home Demo is released</li>
+              <li>2020 - Palinurus is released on Android</li>
+              <li>2020 - A Field of Flowers and Stars is released</li>
+            </ul>
+            <p class="mb-0">This era starts with One Step Forward's permanent shelving, the first full-scale production to do so. This would also be the first time Watercress would fail to release a full game during a game jam, with A Field of Flowers and Stars needing an initial demo release. Shortly thereafter, sith the onset of COVID-19, much of Watercress was disrupted. When the War was Home needed to be cut down to a demo (a full version is still yet to be released, but is planned), A Field of Flowers and Stars finally releases late in the year (with massive rewrites and polishing passes), and Palinurus' promised Android release finally ships. Watercress slowed production elsewhere, avoiding burnout and stress during the peak pandemic months. Behind the scenes, pieces were being put in place for a revival of a certain flagship project. This was a period of struggle and changing perspective.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-2 left-2">
+        <div class="card">
+          <img src="img/timeline/AnnivArtWatercress.webp" class="card-img-top" alt="Responsive image">
+          <div class="card-body p-4">
+            <h3>Avitus Returns</h3>
+				    <hr>
+            <h5 class="fw-bold mb-4">The Fifth Age of Watercress - Getting the Band Back Together</h5>
+            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i>2020 to present</p>
+            <h5>Notable Moments:</h5>
+            <ul>
+              <li>2020 - Avitus is rebuilt from the ground up, beginning conceptual production</li>
+					    <li>2021 - Vignette, an Avitus prequel, is released on itch.io and Steam</li>
+					    <li>2021 - A Field of Flowers and Stars is released on Steam</li>
+            </ul>
+            <p class="mb-0">Over the course of 2020, plans were quietly underway to bring back much of the original Avitus writing cast. This included almost every single original Lead Writer - the largest influx of experienced writing talent in Watercress history. On August 6th, 2020, they all finally came together to start anew on an age-old project - Avitus. The project is completely redesigned, with new characters joining old, with an expanded vision for the game. Alongside this, large projects like A Field of Flowers and Stars were brought to Steam, with Vignette being the first mainline Avitus game to come to the public eye. After five long years, the entire studio is finally reunited on a singular vision - the third "Golden Age".</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+<style> 
+  a {
+    font-weight: bolder;
+  }
+
+  .fab {
+    color:azure;
+    font-size: 40px;
+    padding: 2.5%;
+  }
+  
+  h2 {
+    color: white;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .main-timeline-2 {
+    position: relative;
+  }
+
+  /* The actual timeline (the vertical ruler) */
+  .main-timeline-2::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: #26c6da;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+
+  /* Container around content */
+  .timeline-2 {
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+
+  /* The circles on the timeline */
+  .timeline-2::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -11px;
+    background-color: #26c6da;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  /* Place the container to the left */
+  .left-2 {
+    padding: 0px 40px 20px 0px;
+    left: 0;
+  }
+
+  /* Place the container to the right */
+  .right-2 {
+    padding: 0px 0px 20px 40px;
+    left: 50%;
+  }
+
+  /* Add arrows to the left container (pointing right) */
+  .left-2::before {
+    content: " ";
+    position: absolute;
+    top: 18px;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+
+  /* Add arrows to the right container (pointing left) */
+  .right-2::before {
+    content: " ";
+    position: absolute;
+    top: 18px;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Fix the circle for containers on the right side */
+  .right-2::after {
+    left: -14px;
+  }
+
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+
+    /* Place the timelime to the left */
+    .main-timeline-2::after {
+      left: 31px;
+    }
+
+    /* Full-width containers */
+    .timeline-2 {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .timeline-2::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+
+
+    /* Make sure all circles are at the same spot */
+    .left-2::after,
+    .right-2::after {
+      left: 18px;
+    }
+
+    .left-2::before {
+      right: auto;
+    }
+
+    /* Make all right containers behave like the left ones */
+    .right-2 {
+      left: 0%;
+    }
+  }
+</style>
+
+<!-- background-color: #3777e9; -->
+<img id="waves" alt="waves" src="please.svg" width="100%">
+<footer class="text-lg-start">
+  <div class="text-center py-4 align-items-center" data-aos="zoom-out-down">
+    <div id="social-links">
+      <a href="https://twitter.com/TeamWatercress" role="button" target="_blank" rel="noopener noreferrer nofollow"><i class="fab fa-twitter"></i></a>
+      <a href="https://github.com/WatercressStudios"  role="button" target="_blank" rel="noopener noreferrer nofollow"><i class="fab fa-github"></i></a>
+      <a href="https://discord.gg/watercress" role="button" target="_blank" rel="noopener noreferrer nofollow"><i class="fab fa-discord"></i></a>
+      <a href="https://soundcloud.com/watercress-studios"  role="button" target="_blank" rel="noopener noreferrer nofollow"><i class="fab fa-soundcloud"></i></a>
+      <a href="http://twitch.tv/teamwatercresss" role="button" target="_blank" rel="noopener noreferrer nofollow"><i class="fab fa-twitch"></i></a>
+    </div>
+    <div id="copyright">
+      <a href="privacypolicy.html">Privacy Policy</a>
+      <p>Watercress Studios 2014 - 2022</p>
+      <p>Website by Happiness+, Lee, Wolfborg</p>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="js/mdb.min.js" defer></script>
+</body>
+</html>

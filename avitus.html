@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Avitus</title>
+  
+    <!-- Load jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  
+    <!-- MDB icon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" as="style" onload="this.rel='stylesheet'">
+  
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    
+    <!-- uncomment when told to, I don't like bebas nue right here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+  
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+  
+    <!-- logos -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/logos/apple-icon-57x57.webp">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/logos/apple-icon-60x60.webp">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/logos/apple-icon-72x72.webp">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/logos/apple-icon-76x76.webp">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/logos/apple-icon-114x114.webp">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/logos/apple-icon-120x120.webp">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/logos/apple-icon-144x144.webp">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/logos/apple-icon-152x152.webp">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/logos/apple-icon-180x180.webp">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/logos/android-icon-192x192.webp">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logos/favicon-32x32.webp">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/logos/favicon-96x96.webp">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/logos/favicon-16x16.webp">
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Open graph stuff -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Watercress Studios"/>
+    <meta property="og:description" content="We are the largest freeware Visual Novel studio in the North America!"/>
+    <meta property="og:url" content="https://watercressstudios.com/"/>
+    <meta property="og:image" content="https://watercressstudios.com/img/Logo.webp" />
+    <meta property="og:site_name" content="Watercress" />
+    <!-- Twitter card stuff -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Watercress Studios"/>
+    <meta name="twitter:url" content="https://watercressstudios.com"/>
+    <meta name="twitter:description" content="The Largest Visual Novel Studio in USA"/>
+    <meta name="twitter:site" content="@TeamWatercress"/>
+    <meta name="twitter:image" content="https://watercressstudios.com/img/Logo.webp"/>
+    <meta name="twitter:creator" content="@Happinessplus__"/>
+  
+    <!-- Custom -->
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+  </head>
+
+  <body>
+      <header>
+        <nav class="navbar navbar-light" style="
+        background: rgba(255, 255, 255, 0.1);
+        /* border-radius: 16px; */
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2.7px);
+        -webkit-backdrop-filter: blur(2.7px);
+        /* border: 1px solid rgba(255, 255, 255, 0.3); */
+        "
+        >
+            <div class="container-fluid">
+              <!-- switch to data lazy once I get lazy loading -->
+              <img src="img/Logo.webp" alt="Watercress Studios" height="50px" width="50px">
+              <h2 style="color: white; font-family: 'Bebas Neue', sans-serif;">Watercress</h2>
+              <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" style="color: #3777e9 ;"
+                data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+          </nav>
+          <!-- Remember this blue, style="background: #475cfa;" -->
+          <div class="collapse" style="
+          background: rgba(255, 255, 255, 0.1);
+          /* border-radius: 16px; */
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(2.7px);
+          -webkit-backdrop-filter: blur(2.7px);
+          /* border: 1px solid rgba(255, 255, 255, 0.3); */
+          " id="navbarToggleExternalContent"> 
+            <div class="shadow-3 p-4">
+              <button class="btn btn-link btn-block m-0 border-bottom"><a href="index.html">Home</a></button>
+              <button class="btn btn-link btn-block m-0 border-bottom"><a href="aboutus.html">About Us</a></button>
+              <button class="btn btn-link btn-block m-0 border-bottom"><a href="avitus.html">Avitus</a></button>
+              <button class="btn btn-link btn-block m-0 border-bottom"> <a href="gameslist.html">Games</a></button>
+            </div>
+            </div>
+        </header>
+
+  <video loop autoplay style="position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;">
+      <source src="nightbackground.webm" type="video/webm">
+  </video>
+  <section id="intro" class="container text-center" style="color: white;">
+    <h1 class="text-center" style="padding: 2%; color: white;">Avitus: Meet the Cast</h1>
+    <hr>
+    <p>Avitus (Working Title): An ensemble tale following the lives of Rory and their classmates as they navigate a new life at the Avitus International University of Arts.</p>
+    
+  </section>
+
+  <section id="selection" >
+    <!-- Pills navs -->
+<ul class="nav nav-pills mb-3" id="ex1" role="tablist" style="padding-left: 10%; padding-right: 10%;">
+  <li class="nav-item" role="presentation">
+    <a
+      class="glass btn btn-primary btn-lg m-2 ripple hoverable active"
+      id="ex1-tab-1"
+      data-mdb-toggle="pill"
+      href="#ex1-pills-1"
+      role="tab"
+      aria-controls="ex1-pills-1"
+      aria-selected="true"
+      >Sanne</a
+    >
+  </li>
+  <li class="nav-item" role="presentation">
+    <a
+      class="glass btn btn-primary btn-lg m-2 ripple hoverable"
+      id="ex1-tab-2"
+      data-mdb-toggle="pill"
+      href="#ex1-pills-2"
+      role="tab"
+      aria-controls="ex1-pills-2"
+      aria-selected="false"
+      >Joseph</a
+    >
+  </li>
+  <li class="nav-item" role="presentation">
+    <a
+      class="glass btn btn-primary btn-lg m-2 ripple hoverable"
+      id="ex1-tab-3"
+      data-mdb-toggle="pill"
+      href="#ex1-pills-3"
+      role="tab"
+      aria-controls="ex1-pills-3"
+      aria-selected="false"
+      >Marcus</a
+    >
+  </li>
+  <li class="nav-item" role="presentation">
+    <a
+      class="glass btn btn-primary btn-lg m-2 ripple hoverable"
+      id="ex1-tab-4"
+      data-mdb-toggle="pill"
+      href="#ex1-pills-4"
+      role="tab"
+      aria-controls="ex1-pills-4"
+      aria-selected="false"
+      >Mǐn-Jian</a
+    >
+  </li>
+  <li class="nav-item" role="presentation">
+    <a
+      class="glass btn btn-primary btn-lg m-2 ripple hoverable"
+      id="ex1-tab-6"
+      data-mdb-toggle="pill"
+      href="#ex1-pills-6"
+      role="tab"
+      aria-controls="ex1-pills-6"
+      aria-selected="false"
+      >Akácie</a
+    >
+  </li>
+  <li class="nav-item" role="presentation">
+    <a
+      class="glass btn btn-primary btn-lg m-2 ripple hoverable"
+      id="ex1-tab-5"
+      data-mdb-toggle="pill"
+      href="#ex1-pills-5"
+      role="tab"
+      aria-controls="ex1-pills-5"
+      aria-selected="false"
+      >Natalie</a
+    >
+  </li>
+  <li class="nav-item" role="presentation">
+    <a
+      class="glass btn btn-primary btn-lg m-2 ripple hoverable"
+      id="ex1-tab-7"
+      data-mdb-toggle="pill"
+      href="#ex1-pills-7"
+      role="tab"
+      aria-controls="ex1-pills-7"
+      aria-selected="false"
+      >Wren</a
+    >
+  </li>
+</ul>
+  </section>
+<!-- Pills navs -->
+
+<!-- Pills content -->
+<div class="tab-content" id="ex1-content">
+  <div
+    class="tab-pane fade show active"
+    id="ex1-pills-1"
+    role="tabpanel"
+    aria-labelledby="ex1-tab-1"
+  >
+  <section id="leadership" class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="scene scene--card">
+          <div  class="card1 card h-100">
+            <img
+              src="img/avitus/P_Sanne.webp"
+              class="card-img-top"
+              alt="Sanne"
+            />
+            <div class="card__face card__face--front">
+              <div class="card-body">
+                <h2 class="fw-bold text-center">Sanne St. Pierre</h2>
+                    <h2 class="text-center">Lead Character</h2>
+                    <hr>
+                    <p>Avitus' spicy traditional and gaffiti artist.
+						<ul>
+							<li>Nationality: Dutch-American</li>
+							<li>Hometown: Amsterdam, Netherlands</li>
+							<li>Age: 18</li>
+							<li>Birthday: July 3rd</li>
+							<li>Art: Graffiti/Traditional Art</li>
+							<li>Height: 5'7" (170 cm)</li>
+				 		</ul>
+				  </p>
+                    <h5>Click on card to learn more</h5>
+              </div>
+            </div>
+            <div class="card__face card__face--back">
+              <div class="card-body">
+              <h3 class="card-title text-center">Background</h3>
+              <hr>
+              <p class="member-description">Sanne St. Pierre is a Dutch-American graffiti artist, well known around the campus for her aloof, casual and often blunt personality. Absolutely unapologetic about her crimes, she's either a breath of fresh air or a toxic fixture within Avitus, depending on who you talk to. The existence of less-than-legal graffiti art littering the campus and nearby cityscape lends credence to her unique perspective towards life.</p><br>
+                <button type="button" class="btn btn-secondary btn-rounded"><a href="avitusbios/sannecharacterbio.html">Learn More</a></button>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- note: this design breaks down at 768 pixels wide. -->
+      
+
+    </div>
+    </div>
+  <div class="tab-pane fade" id="ex1-pills-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+    <div class="col container">
+      <div class="scene scene--card">
+        <div  class="card1 card h-100">
+          <img
+            src="img/avitus/P_Joseph.webp"
+            class="card-img-top"
+            alt="Joseph"
+          />
+          <div class="card__face card__face--front">
+            <div class="card-body">
+              <h2 class="fw-bold text-center">Joseph Kanbe</h2>
+                  <h2 class="text-center">Lead Character</h2>
+                  <hr>
+                    <p>Avitus' aloof guitarist and martial artist.
+						<ul>
+							<li>Nationality: Canadian</li>
+							<li>Hometown: Bedford, Canada</li>
+							<li>Age: 19</li>
+							<li>Birthday: November 13th</li>
+							<li>Art: Guitarist</li>
+							<li>Height: 5'11" (180 cm)</li>
+				 		</ul>
+				  </p>
+                  <h5>Click on card to learn more</h5>
+            </div>
+          </div>
+          <div class="card__face card__face--back">
+            <div class="card-body">
+            <h3 class="card-title text-center">Background</h3>
+            <hr>
+            <p class="member-description">Joseph is a capable young man, a skilled guitarist and a competent martial artist. Polite-yet-distant, he tends to interact however much is necessary before pulling back into his own thoughts. He has pride in his faith and beliefs, and a strong sense of justice and what is right. To those he considers a friend, he comes across as either composed and intelligent, or they lose track completely of what's going on in his head. Usually both.</p><br>
+              <button type="button" class="btn btn-secondary btn-rounded"><a href="avitusbios/josephcharacterbio.html">Learn More</a></button>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+
+      
+  </div>
+  <div class="tab-pane fade" id="ex1-pills-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+    <div class="col container" >
+      <div class="scene scene--card">
+        <div  class="card1 card h-100">
+          <img
+            src="img/avitus/P_Marcus.webp"
+            class="card-img-top"
+            alt="Marcus"
+          />
+          <div class="card__face card__face--front">
+            <div class="card-body">
+              <h2 class="fw-bold text-center">Marcus Clement</h2>
+                  <h2 class="text-center">Lead Character</h2>
+                  <hr>
+                    <p>Avitus' smooth Jazz singer and pianist.
+						<ul>
+							<li>Nationality: American</li>
+							<li>Hometown: New Orleans, USA</li>
+							<li>Age: 21</li>
+							<li>Birthday: November 27th</li>
+							<li>Art: Jazz Pianist and Singer</li>
+							<li>Height: 6'1" (185 cm)</li>
+				 		</ul>
+				  </p>
+                  <h5>Click on card to learn more</h5>
+            </div>
+          </div>
+          <div class="card__face card__face--back">
+            <div class="card-body">
+            <h3 class="card-title text-center">Background</h3>
+            <hr>
+            <p class="member-description">Marcus Sebastian Clement is an American jazz pianist who is quick to laugh and friends with everyone. However, despite others opening up to him, he never seems to return the favour. Beneath his jovial personality is a man determined to better himself.</p><br>
+              <button type="button" class="btn btn-secondary btn-rounded"><a href="avitusbios/marcuscharacterbio.html">Learn More</a></button>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+
+      </div>
+  <div class="tab-pane fade" id="ex1-pills-4" role="tabpanel" aria-labelledby="ex1-tab-4">
+    <div class="col container">
+      <div class="scene scene--card">
+        <div  class="card1 card h-100">
+          <img
+            src="img/avitus/P_Min.webp"
+            class="card-img-top"
+            alt="Min"
+          />
+          <div class="card__face card__face--front">
+            <div class="card-body">
+              <h2 class="fw-bold text-center">Mǐn-Jian Hellström</h2>
+                  <h2 class="text-center">Lead Character</h2>
+                  <hr>
+                    <p>Avitus' prickly DJ and Producer.
+						<ul>
+							<li>Nationality: Swedish-Chinese</li>
+							<li>Hometown: Stockholm, Sweden</li>
+							<li>Age: 18</li>
+							<li>Birthday: April 23rd</li>
+							<li>Art: DJ'ing and Musical Composition</li>
+							<li>Height: 4'11" (150 cm)</li>
+				 		</ul>
+				  </p>
+                  <h5>Click on card to learn more</h5>
+            </div>
+          </div>
+          <div class="card__face card__face--back">
+            <div class="card-body">
+            <h3 class="card-title text-center">Background</h3>
+            <hr>
+            <p class="member-description">Min-Jian Hellstrom is a talented DJ and producer from Stockholm, Sweden, belonging to an affluent family. Not much is known about her, as she tends to be prickly by nature, keeping most at an arm's length. Thus it is only natural that rumors swirl in her wake.</p><br>
+              <button type="button" class="btn btn-secondary btn-rounded"><a href="avitusbios/mincharacterbio.html">Learn More</a></button>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+
+      </div>
+  <div class="tab-pane fade" id="ex1-pills-5" role="tabpanel" aria-labelledby="ex1-tab-5">
+    <div class="col container">
+      <div class="scene scene--card">
+        <div  class="card1 card h-100">
+          <img
+            src="img/avitus/P_Nat.webp"
+            class="card-img-top"
+            alt="Natalie"
+          />
+          <div class="card__face card__face--front">
+            <div class="card-body">
+              <h2 class="fw-bold text-center">Natalie Doherty</h2>
+                  <h2 class="text-center">Lead Character</h2>
+                  <hr>
+                    <p>Avitus' calm novelist and writer.
+						<ul>
+							<li>Nationality: English</li>
+							<li>Hometown: Redbridge, UK</li>
+							<li>Age: 18</li>
+							<li>Birthday: October 18th</li>
+							<li>Art: Writing</li>
+							<li>Height: 5'6" (167 cm)</li>
+				 		</ul>
+				  </p>
+                  <h5>Click on card to learn more</h5>
+            </div>
+          </div>
+          <div class="card__face card__face--back">
+            <div class="card-body">
+            <h3 class="card-title text-center">Background</h3>
+            <hr>
+            <p class="member-description">Natalie Doherty is an English writer and former kleptomaniac who is determined to atone for her past mistakes. Forced to grow up at far too young an age and raise her little sister herself, Natalie also wants to experience some of the fun that she missed out on as a child. Try as she might to break out of her shell, she can’t help doubting herself at times, making social interactions a bit awkward.</p><br>
+              <button type="button" class="btn btn-secondary btn-rounded"><a href="avitusbios/nataliecharacterbio.html">Learn More</a></button>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+
+        </div>
+    <div class="tab-pane fade" id="ex1-pills-6" role="tabpanel" aria-labelledby="ex1-tab-6">
+      <div class="col container">
+        <div class="scene scene--card">
+          <div  class="card1 card h-100">
+            <img
+              src="img/avitus/P_Aka.webp"
+              class="card-img-top"
+              alt="Akácie"
+            />
+            <div class="card__face card__face--front">
+              <div class="card-body">
+                <h2 class="fw-bold text-center">Akácie Reinhold</h2>
+                    <h2 class="text-center">Lead Character</h2>
+                    <hr>
+                    <p>Avitus' chill woodworker and dancer.
+						<ul>
+							<li>Nationality: Czech</li>
+							<li>Hometown: ???, Czech Republic</li>
+							<li>Age: 19</li>
+							<li>Birthday: February 21st</li>
+							<li>Art: Dance and Woodworking</li>
+							<li>Height: 5'5" (165 cm)</li>
+				 		</ul>
+				  </p>
+                    <h5>Click on card to learn more</h5>
+              </div>
+            </div>
+            <div class="card__face card__face--back">
+              <div class="card-body">
+              <h3 class="card-title text-center">Background</h3>
+              <hr>
+              <p class="member-description">Acacia is a Czech-born girl with a passion for dance and woodcrafting. Bold and thoughtful, she sees Avitus as the perfect opportunity to make things right and carve out her own future. She maintains that her arson conviction was the most important moment of her life for the path it has set her on.</p><br>
+                <button type="button" class="btn btn-secondary btn-rounded"><a href="avitusbios/akaciacharacterbio.html">Learn More</a></button>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+
+            </div>
+            <div class="tab-pane fade" id="ex1-pills-7" role="tabpanel" aria-labelledby="ex1-tab-7">
+              <div class="col container">
+                <div class="scene scene--card">
+                  <div  class="card1 card h-100">
+                    <img
+                      src="img/avitus/P_Wren.webp"
+                      class="card-img-top"
+                      alt="Wren"
+                    />
+                    <div class="card__face card__face--front">
+                      <div class="card-body">
+                        <h2 class="fw-bold text-center">Wren Goldwyn</h2>
+                            <h2 class="text-center">Lead Character</h2>
+                            <hr>
+                    <p>Avitus' mysterious actor and director.
+						<ul>
+							<li>Nationality: American-Israeli</li>
+							<li>Hometown: Culver City, USA</li>
+							<li>Age: 20</li>
+							<li>Birthday: December 28th</li>
+							<li>Art: Acting and Filmmaking</li>
+							<li>Height: 5'8" (173 cm)</li>
+				 		</ul>
+				  </p>
+                            <h5>Click on card to learn more</h5>
+                      </div>
+                    </div>
+                    <div class="card__face card__face--back">
+                      <div class="card-body">
+                      <h3 class="card-title text-center">Background</h3>
+                      <hr>
+                      <p class="member-description">Wren Goldwyn is a young, beautiful amateur filmmaker from parts unknown. A kindhearted bon vivant known for her sanguine, upbeat attitude, Wren has made many friends—and more than a few admirers—on the Avitus campus. Still, even among those closest to this free-spirited girl, much about her remains a complete mystery.</p><br>
+                        <button type="button" class="btn btn-secondary btn-rounded"><a href="avitusbios/wrencharacterbio.html">Learn More</a></button>
+                      </div>  
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+                    </div>
+
+
+</div>
+<!-- Pills content -->
+  </section>
+
+
+    <style>
+      button a:hover{
+        color: black;
+      }
+      .btn-secondary a{
+        color: white !important;
+      }
+
+      .btn-secondary{
+        background-color: #3dc507;
+      }
+      a{
+        font-weight: bolder;
+      }
+
+      .fab1{
+        color:unset !important;
+      }
+
+      .fab{
+        color:white;
+        font-size: 40px;
+        padding: 2.5%;
+      }
+
+      .fab.card__face--front{
+        color: blue !important;
+      }
+
+      .glass:hover{
+        color: black
+      }
+
+      .glass{
+background: rgba(255, 255, 255, 0.1);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.5px);
+-webkit-backdrop-filter: blur(2.5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.scene {
+  perspective: 600px;
+}
+
+.card1 {
+  display: inherit;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+}
+
+.card1.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card__face {
+  position: fixed;
+  width: 100%;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  /* height: 100%; */
+  backface-visibility: hidden;
+}
+
+.card__face--front {
+  background-color: white;
+  color: black !important
+}
+
+.card__face--back {
+  background-color: white;
+  color: black !important;
+  transform: rotateY(180deg);
+}
+</style>
+
+<!-- background-color: #3777e9; -->
+<img id="waves" alt="waves" src="please.svg" width="100%">
+<footer class="text-lg-start">
+  <div class="text-center py-4 align-items-center" data-aos="zoom-out-down">
+    <div id="social-links">
+      <a href="https://twitter.com/TeamWatercress" role="button" target="_blank" rel="noopener noreferrer nofollow"><i class="fab fa-twitter"></i></a>
+      <a href="https://github.com/WatercressStudios"  role="button" target="_blank" rel="noopener noreferrer nofollow"><i class="fab fa-github"></i></a>
+      <a href="https://discord.gg/watercress" role="button" target="_blank" rel="noopener noreferrer nofollow"><i class="fab fa-discord"></i></a>
+      <a href="https://soundcloud.com/watercress-studios"  role="button" target="_blank" rel="noopener noreferrer nofollow"><i class="fab fa-soundcloud"></i></a>
+      <a href="http://twitch.tv/teamwatercresss" role="button" target="_blank" rel="noopener noreferrer nofollow"><i class="fab fa-twitch"></i></a>
+    </div>
+    <div id="copyright">
+      <a href="privacypolicy.html">Privacy Policy</a>
+      <p>Watercress Studios 2014 - 2022</p>
+      <p>Website by Happiness+, Lee, Wolfborg</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+<script>
+  document.querySelectorAll('.card').forEach(item => {
+  item.addEventListener('click', function() {
+    item.classList.toggle('is-flipped');
+  });
+})</script>
+<script type="text/javascript" src="js/mdb.min.js" defer></script>
+
+</html>

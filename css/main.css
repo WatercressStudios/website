@@ -1,0 +1,120 @@
+header nav, #navbarToggleExternalContent {
+  background: rgba(255, 255, 255, 0.1);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.7px);
+  -webkit-backdrop-filter: blur(2.7px);
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+#navbarToggleExternalContent a {
+  color: #475cfa;
+  font-weight: bolder;
+}
+
+header nav h2 {
+  color: white; font-family: 'Bebas Neue', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+.scene {
+  margin: 40px 0;
+  position: relative;
+  width: 210px;
+  height: 137px;
+  margin: 80px auto;
+  perspective: 1000px;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-primary:hover, .btn-primary:active {
+  color: black;
+}
+
+@media screen and (min-width: 600px) {
+  #responsiveintro {
+    display: inline !important;
+  }
+  #intro {
+    display: none;
+  }
+  .carousel {
+    position: inherit;
+  }
+  #waves {
+    margin-top: 22.5%;
+  }
+}
+
+@media screen and (max-width: 500px) and (min-width: 250px) {
+  .scene{
+    margin-left: 19%;
+  }
+}
+
+@supports (-webkit-touch-callout: default) {
+  #intro, #responsiveintro, video {
+    display: none;
+  }
+  body {
+    background: linear-gradient(90deg, rgba(33,33,40,1) 0%, rgba(10,10,13,1) 35%) !important; 
+  }
+}
+
+@supports not (-webkit-touch-callout: none) {
+  #introiOS {
+    display: none;
+  }
+}
+
+.btn-primary {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.fab{
+  color: azure;
+  font-size: 40px;
+  padding: 2.5%;
+}
+
+
+footer {
+  background-color: #3777e9;
+}
+
+#copyright, #copyright a {
+  color: white;
+}
+
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}

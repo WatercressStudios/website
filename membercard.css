@@ -1,0 +1,85 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+
+.main-team {
+display: grid;
+justify-content: center;
+grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+padding: 20px;
+grid-gap: 40px;
+}
+.full-team {
+ display: grid;
+ justify-content: center;
+grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+padding: 20px;
+grid-gap: 40px;
+}
+.main-member-card {
+background-color: white;
+color: black;
+border-radius: 10px;
+box-shadow: 2px 2px 6px 0px rgb(0,0,0,0.3);
+text-align: center;
+
+}
+.full-member-card {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    box-shadow: 2px 2px 6px 0px rgb(0,0,0,0.3);
+    text-align: center;   
+}
+
+.member-pfp {
+    margin-top: 10%;
+width: 25%;
+ border-radius: 50%;
+}
+.social-media {
+    color: #001e6d;
+    padding: 0.5em 0em 0.5em 0em;
+    list-style: none;
+    font-size: 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+li {
+  padding-left: 0.5em;
+}
+.member-name {
+padding: 0em 0em 0.5em 0em;
+}
+.member-role {
+    padding: 0em 0em 0.5em 0em;
+}
+.member-description {
+  text-align: left;
+    margin: 1em 3em 3em 3em;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-team {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .main-team {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .main-team {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
