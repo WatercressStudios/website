@@ -1,18 +1,16 @@
-<!-- Note, this is a template so that anyone can make dozens of more VN pages in the future by copying and pasting this code around -Happiness+ -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Member Bio</title>
+    <title>Vignette</title>
   
     <!-- Load jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   
     <!-- MDB icon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" as="style" onload="this.rel='stylesheet'">
   
     <!-- Font Awesome -->
@@ -29,23 +27,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
   
     <!-- MDB -->
-    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="../css/mdb.min.css" />
   
     <!-- logos -->
-    <link rel="apple-touch-icon" sizes="57x57" href="img/logos/apple-icon-57x57.webp">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/logos/apple-icon-60x60.webp">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/logos/apple-icon-72x72.webp">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/logos/apple-icon-76x76.webp">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/logos/apple-icon-114x114.webp">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/logos/apple-icon-120x120.webp">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/logos/apple-icon-144x144.webp">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/logos/apple-icon-152x152.webp">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/logos/apple-icon-180x180.webp">
-    <link rel="icon" type="image/webp" sizes="192x192"  href="img/logos/android-icon-192x192.webp">
-    <link rel="icon" type="image/webp" sizes="32x32" href="img/logos/favicon-32x32.webp">
-    <link rel="icon" type="image/webp" sizes="96x96" href="img/logos/favicon-96x96.webp">
-    <link rel="icon" type="image/webp" sizes="16x16" href="img/logos/favicon-16x16.webp">
-    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="../img/logos/apple-icon-57x57.webp">
+    <link rel="apple-touch-icon" sizes="60x60" href="../img/logos/apple-icon-60x60.webp">
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/logos/apple-icon-72x72.webp">
+    <link rel="apple-touch-icon" sizes="76x76" href="../img/logos/apple-icon-76x76.webp">
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/logos/apple-icon-114x114.webp">
+    <link rel="apple-touch-icon" sizes="120x120" href="../img/logos/apple-icon-120x120.webp">
+    <link rel="apple-touch-icon" sizes="144x144" href="../img/logos/apple-icon-144x144.webp">
+    <link rel="apple-touch-icon" sizes="152x152" href="../img/logos/apple-icon-152x152.webp">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/logos/apple-icon-180x180.webp">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../img/logos/android-icon-192x192.webp">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/logos/favicon-32x32.webp">
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/logos/favicon-96x96.webp">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/logos/favicon-16x16.webp">
+    <link rel="manifest" href="../manifest.json">
     
     <!-- Open graph stuff -->
     <meta property="og:type" content="website" />
@@ -64,10 +62,8 @@
     <meta name="twitter:creator" content="@Happinessplus__"/>
   
     <!-- Custom -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
   </head>
-
-  <body>
       <header>
         <nav class="navbar navbar-light" style="
         background: rgba(255, 255, 255, 0.1);
@@ -80,13 +76,17 @@
         >
             <div class="container-fluid">
               <!-- switch to data lazy once I get lazy loading -->
-              <img src="img/Logo.webp" alt="Watercress Studios" height="50px" width="50px">
-              <h2 style="color: white; font-family: 'Lato', sans-serif;">Watercress</h2>
-              <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" style="color: #3777e9 ;"
+              <div id="home-button">
+                <a href="../index.html">
+                  <img src="../img/Logo.webp" alt="Watercress Studios" height="100px" width="100px" style="float:left;">
+                  <h2 style="float:left; margin-top:30px;">Watercress</h2>
+                </a>
+              </div>
+              <!-- <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" style="color: #3777e9 ;"
                 data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
-              </button>
+              </button> -->
             </div>
           </nav>
           <!-- Remember this blue, style="background: #475cfa;" -->
@@ -101,41 +101,44 @@
             <div class="shadow-3 p-4">
               <!-- change border bottom's color to violet -->
               
-              <button class="btn btn-link btn-block m-0 border-bottom"><a href="gameslist.html">Games</a></button>
-              <button class="btn btn-link btn-block m-0 border-bottom"><a href="aboutus.html">About Us</button>
-              <button class="btn btn-link btn-block m-0 border-bottom"><a href="">Avitus</a></button>
-              <button class="btn btn-link btn-block m-0 border-bottom"> <a href="team.html">Meet The Team</a></button>
+              <button class="btn btn-link btn-block m-0 border-bottom"><a href="..\gameslist.html">Games</a></button>
+              <button class="btn btn-link btn-block m-0 border-bottom"><a href="..\aboutus.html">About Us</button>
+              <button class="btn btn-link btn-block m-0 border-bottom"><a href="..\avitus.html">Avitus</a></button>
+              <button class="btn btn-link btn-block m-0 border-bottom"> <a href="..\team.html">Meet The Team</a></button>
             </div>
             </div>
         </header>
-
+<body>
   <video loop autoplay style="position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
     z-index: -1;">
-      <source src="nightbackground.webm" type="video/webm">
+      <source src="..\nightbackground.webm" type="video/webm">
   </video>
     <section>
+      <br>
         <div class="container" style="color: white;">
-            
-        <h1 class="fw-bold text-center">Wolf</h1>
-        <h2 class="text-center">Studio Director/CEO</h2>
-        <h3 class="text-center">Full Background</h3>
-        <hr>
             <div class="row gx-1 ">
           
               <div class="col-md-6">
-                <img src="sanne.webp" alt="Headshot anime profile picture of studio director, Wolf" class="img-fluid">
+                <img src="..\img\vignette.png" alt="Logo of Watercress' Vignette" class="img-fluid">
                 <!-- Don't know how to sample that thingy -->
               </div>
-              
-              <div class="col-md-6 ">
-                <br>
-                <p style="padding: 1.5%;">Tristan "Wolf" Barber joined Watercress in 2014, a month after the studio's founding, quickly becoming both a Lead Writer and the Studio Director. As CEO, he was responsible for the studio's incorporation in 2017, and he continues to manage the studio as he has for the majority of its existence, personally directing over half of the studio's released projects. As a leader, he puts individual/studio improvement, accessibility, and ethics above all else - even if it results in a sacrifice of quality or a delayed game. As a writer, he constantly strives to better himself, working towards a Bachelor's degree in English Literature and Creative Writing. Outside of his studio work, he gives industry talks, hosts panels, and consults at other game development studios, like Watercress' sister studio Somnova Studios. As the sole Watercress member to have contributed to all of Watercress' major projects, he offers unique stability that many freeware studios cannot afford.
-                </p>
-                
+          
+              <div class="col-md-6">
+                <h1 class="text-center text-lg-start">Vignette</h1>
+                <hr class="m-0" />
+                <p>Rory, on a particularly stormy night, stumbles upon a surprisingly charming abandoned home. After showing this discovery to their younger sibling, Desdemona, the two pass their time fixing up the place, and adding their own charm. Years pass, people change, friends come and go, but their secret base still quietly remains.</p>
+                <div style="background-color: azure; color: black; padding: 3%; filter: drop-shadow(0 0 0.75rem antiquewhite);" class="shadow-5-strong rounded">
+                    <h4 class="text-lg-start text-center">Features:</h4>
+                    <h5>Word Count:  </h5>
+                    <h5>Resolution: 2560 x 1440 </h5>
+                    <h5>Voice Acting: Fully Voiced</h5>
+                    <h5>Price: Free</h5>
+                    <h5>Collaborators: Watercress</h5>
+                </div>
           
               </div>
           
@@ -143,13 +146,13 @@
 
             <div style="font-size: 333%;
             color: white !important;" class="text-center">
-            <a href="#"  role="button"  target="_blank" rel="noopener noreferrer nofollow"
+            <!-- <a href="#" role="button"  target="_blank" rel="noopener noreferrer nofollow"
             >
-            <i class="fab fa-steam" style="color: white;"></i>
-          </a>
-          <a href="#"  role="button" target="_blank" rel="noopener noreferrer nofollow"
+            <i class="fab fa-steam" style="color: white;"aria-hidden="true"></i><span class="visually-hidden">Steam</span>
+          </a> -->
+          <a href="https://watercress.itch.io/vignette" role="button" target="_blank" rel="noopener noreferrer nofollow"
           >
-          <i class="fab fa-itch-io" style="color: white;"></i>
+          <i class="fab fa-itch-io" style="color: white;" aria-hidden="true"></i><span class="visually-hidden">Itch.io</span>
         </a>  
             </div>
             
@@ -157,9 +160,6 @@
        
     </section>
     <style>
-      .btn-primary{
-        background-color: #3dc507;
-      }
       .fab{
         color: azure;
         font-size: 40px;
@@ -169,9 +169,8 @@
         font-weight: bolder;
       }
     </style>
-
 <!-- background-color: #3777e9; -->
-<img id="waves" alt="waves" src="please.svg" width="100%">
+<img id="waves" alt="waves" src="../please.svg" width="100%">
 <footer class="text-lg-start">
   <div class="text-center py-4 align-items-center" data-aos="zoom-out-down">
     <div id="social-links">
@@ -185,14 +184,15 @@
       <a href="https://watercress.itch.io/" role="button" target="_blank" rel="noopener noreferrer nofollow"><i class="fab fa-itch-io" aria-hidden="true"></i> <span class="visually-hidden">Itch.io</span></a>
     </div>
     <div id="copyright">
-      <a href="privacypolicy.html">Privacy Policy</a>
+      <a href="../privacypolicy.html">Privacy Policy</a>
       <p>Watercress Studios 2014 - 2022</p>
       <p>Website by Happiness+, Lee, Wolfborg</p>
     </div>
   </div>
 </footer>
-</body>
 
-<script type="text/javascript" src="js/mdb.min.js" defer></script>
+
+</body>
+<script type="text/javascript" src="..\js\mdb.min.js" defer></script>
 
 </html>
